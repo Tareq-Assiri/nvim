@@ -140,6 +140,7 @@ local default_plugins ={
     end,
   },
 
+
   {
     "neovim/nvim-lspconfig",
     init = function()
@@ -147,6 +148,7 @@ local default_plugins ={
     end,
     config = function()
       require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
     end,
   },
 
