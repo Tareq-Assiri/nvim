@@ -16,11 +16,11 @@ local options = {
     adaptive_size = false,
     side = "left",
     width = 30,
-    hide_root_folder = true,
+    hide_root_folder = false,
   },
   git = {
-    enable = false,
-    ignore = true,
+    enable = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,
@@ -43,7 +43,7 @@ local options = {
         file = true,
         folder = true,
         folder_arrow = true,
-        git = false,
+        git = true,
       },
 
       glyphs = {
@@ -52,17 +52,17 @@ local options = {
         folder = {
           default = "",
           empty = "",
-          empty_open = "",
-          open = "",
-          symlink = "",
-          symlink_open = "",
+          empty_open = "",
+          open = "",
+          symlink = "",
+          symlink_open = "",
           arrow_open = "",
           arrow_closed = "",
         },
         git = {
           unstaged = "✗",
           staged = "✓",
-          unmerged = "",
+          unmerged = "",
           renamed = "➜",
           untracked = "★",
           deleted = "",
