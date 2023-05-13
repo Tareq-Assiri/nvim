@@ -1,5 +1,6 @@
 local options = {
   defaults = {
+    previewer=true,
     vimgrep_arguments = {
       "rg",
       "-L",
@@ -19,6 +20,7 @@ local options = {
     layout_strategy = "horizontal",
     layout_config = {
       horizontal = {
+        preview_cutoff = 0,
         prompt_position = "top",
         preview_width = 0.55,
         results_width = 0.8,
@@ -28,7 +30,7 @@ local options = {
       },
       width = 0.87,
       height = 0.80,
-      preview_cutoff = 120,
+      preview_cutoff = 0,
     },
     file_sorter = require("telescope.sorters").get_fuzzy_file,
     file_ignore_patterns = { "node_modules" },
