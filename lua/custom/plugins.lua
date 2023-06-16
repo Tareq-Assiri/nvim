@@ -24,6 +24,10 @@ local plugins = {
     end
   },
   {
+  "jez/vim-better-sml",
+    lazy=false,
+  },
+  {
     "tpope/vim-fugitive",
     lazy=false,
   },
