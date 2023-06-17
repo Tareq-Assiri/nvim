@@ -48,6 +48,13 @@ local plugins = {
       }
     end,
     lazy=false,
+  },{
+    'ThePrimeagen/vim-be-good',
+    lazy=false,
+  },{
+    'ThePrimeagen/harpoon',
+    lazy=false,
   }
+
 }
 return plugins
